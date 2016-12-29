@@ -1,6 +1,7 @@
 #' Get encoded values by trait ID
 #' @param db A database connection
 #' @param trait_ids a vector of trait_ids
+#' @export
 dbGetEncodedValueByTraitId <- function(db, trait_ids){
   ids_string <- paste("e.source_trait_id =", trait_ids, "OR", collapse = " ")
   # Remove trailing ' OR'
