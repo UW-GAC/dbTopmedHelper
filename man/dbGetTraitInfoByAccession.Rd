@@ -4,12 +4,12 @@
 \alias{dbGetTraitInfoByAccession}
 \title{Get trait info by dbGaP phv number}
 \usage{
-dbGetTraitInfoByAccession(db, dbgap_trait_accession)
+dbGetTraitInfoByAccession(db, dbgap_trait_accessions)
 }
 \arguments{
 \item{db}{A database connection}
 
-\item{dbgap_trait_accession}{The dbGaP variable accession, as an integer}
+\item{dbgap_trait_accessions}{A vector of dbGaP variable accessions, as integers}
 }
 \description{
 Get trait info by dbGaP phv number
