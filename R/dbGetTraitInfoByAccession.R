@@ -10,7 +10,7 @@ dbGetTraitInfoByAccession <- function(db, dbgap_trait_accessions){
   # Remove trailing ' OR'
   accs_string <- gsub('.{3}$', '', accs_string)
 
-  query <- paste("SELECT dataset_accession, source_trait_id, trait_name, trait_description",
+  query <- paste("SELECT *",
                  "FROM view_source_trait WHERE",
                  accs_string)
   dbGetQuery(db, query)
