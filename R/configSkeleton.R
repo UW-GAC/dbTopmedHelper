@@ -1,10 +1,8 @@
 #' Get encoded values by trait ID
 #' @param db A database connection
 #' @param dbgap_trait_accessions A vector of dbGaP variable accessions, as integers
-# @export
-dbgap_trait_accessions <- c(80426, 00127615, 00127616, 00126009, 218993, 176011, 176009)
-
-xmlSkeleton <- function(db, dbgap_trait_accessions){
+#' @export
+configSkeleton <- function(db, dbgap_trait_accessions){
   trait_ids <- dbGetTraitInfoByAccession(db, dbgap_trait_accessions) %>%
     select(source_trait_id, study_name) %>%
     plyr::dlply("study_name") %>%
