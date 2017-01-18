@@ -1,6 +1,7 @@
 #' Get trait info by dbGaP phv number
 #' @param db A database connection
 #' @param dbgap_trait_accessions A vector of dbGaP variable accessions, as integers
+#' @import dbTopmed
 #' @export
 dbGetTraitInfoByAccession <- function(db, dbgap_trait_accessions){
   accs_string <- paste("dbgap_trait_accession =",
