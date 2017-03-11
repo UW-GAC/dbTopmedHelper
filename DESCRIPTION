@@ -1,4 +1,4 @@
-Package: dbHelper
+Package: dbTopmedHelper
 Type: Package
 Title: topmed_pheno helper functions
 Version: 0.1.0
