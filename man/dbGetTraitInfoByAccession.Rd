@@ -9,7 +9,7 @@ dbGetTraitInfoByAccession(db, dbgap_trait_accessions)
 \arguments{
 \item{db}{A database connection}
 
-\item{dbgap_trait_accessions}{A vector of dbGaP variable accessions, as integers}
+\item{dbgap_trait_accessions}{A vector of dbGaP variable accessions, as integers or strings with a leading "phv"}
 }
 \description{
 Get trait info by dbGaP phv number

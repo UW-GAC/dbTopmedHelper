@@ -2,4 +2,5 @@
 
 export(dbGetEncodedValueByTraitId)
 export(dbGetTraitInfoByAccession)
+export(dbGetTraitInfoByVarName)
 import(dbTopmed)
