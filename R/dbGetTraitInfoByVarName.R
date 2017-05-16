@@ -5,7 +5,7 @@
 #' @import dbTopmed
 #' @export
 dbGetTraitInfoByVarName <- function(pht, var_names, db){
-    pht_standardized <- .standardizeAccession(pht)
+    pht_standardized <- .standardizeAccessions(pht)
     query <- paste("SELECT *",
                    "FROM view_source_trait",
            sprintf("WHERE dataset_accession = %s", pht_standardized),

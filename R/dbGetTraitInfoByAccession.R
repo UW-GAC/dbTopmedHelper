@@ -6,7 +6,7 @@
 #' @export
 
 dbGetTraitInfoByAccession <- function(db, dbgap_trait_accessions){
-    accs_standardized <- .standardizeAccession(dbgap_trait_accessions)
+    accs_standardized <- .standardizeAccessions(dbgap_trait_accessions)
     query <- paste("SELECT *",
                    "FROM view_source_trait WHERE",
                    sprintf("dbgap_trait_accession IN (%s)",

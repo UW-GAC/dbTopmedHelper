@@ -1,7 +1,7 @@
 #' Converts a vector or list of phs, pht, etc., accessions to integers
 #' @param accessions A vector of dbGaP accessions
 #' @import magrittr
-.standardizeAccession <- function(accessions){
+.standardizeAccessions <- function(accessions){
     accs_simplified <- accessions %>%
         lapply(sub, pattern = "^[[:alpha:]]+", replacement = "") %>%
         sapply(sub, pattern = "\\..*", replacement = "") %>%
