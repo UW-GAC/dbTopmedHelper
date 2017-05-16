@@ -5,9 +5,10 @@
 #' @import dbTopmed
 #' @export
 dbGetTraitInfoByVarName <- function(pht, var_names, db){
+    pht_standardized <- .standardizeAccession(pht)
     query <- paste("SELECT *",
                    "FROM view_source_trait",
-           sprintf("WHERE dataset_accession = %s", pht),
+           sprintf("WHERE dataset_accession = %s", pht_standardized),
            sprintf("AND trait_name IN ('%s');",
                    paste(var_names, collapse = "', '")))
     results <- dbGetQuery(db, query)

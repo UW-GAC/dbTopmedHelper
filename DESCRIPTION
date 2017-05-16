@@ -1,7 +1,7 @@
 Package: dbTopmedHelper
 Type: Package
 Title: topmed_pheno helper functions
-Version: 0.1.0
+Version: 1.0.0
 Author: Jai Broome
 Maintainer: Jai Broome <jbroome@uw.edu>
 Encoding: UTF-8
@@ -9,6 +9,4 @@ LazyData: true
 RoxygenNote: 5.0.1.9000
 Imports:
     dbTopmed,
-    XML,
-    magrittr,
-    dplyr
+    magrittr

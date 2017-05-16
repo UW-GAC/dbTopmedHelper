@@ -2,10 +2,11 @@
 #' @param db A database connection
 #' @param dbgap_trait_accessions A vector of dbGaP variable accessions, as integers or strings with a leading "phv"
 #' @import dbTopmed
+#' @import magrittr
 #' @export
 
 dbGetTraitInfoByAccession <- function(db, dbgap_trait_accessions){
-    accs_standardized <- sapply(dbgap_trait_accessions, sub, pattern = "^phv", replacement = "")
+    accs_standardized <- .standardizeAccession(dbgap_trait_accessions)
     query <- paste("SELECT *",
                    "FROM view_source_trait WHERE",
                    sprintf("dbgap_trait_accession IN (%s)",
