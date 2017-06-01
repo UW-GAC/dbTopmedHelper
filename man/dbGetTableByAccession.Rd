@@ -14,3 +14,4 @@ dbGetTableByAccession(phts, db)
 \description{
 Returns a list of complete tables by pht accession
 }
+

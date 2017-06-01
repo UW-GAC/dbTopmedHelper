@@ -14,3 +14,4 @@ dbGetEncodedValueByTraitId(db, trait_ids)
 \description{
 Get encoded values by trait ID
 }
+

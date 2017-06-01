@@ -16,3 +16,4 @@ dbGetTraitInfoByVarName(pht, var_names, db)
 \description{
 Get trait info from a table by pht number and trait names
 }
+

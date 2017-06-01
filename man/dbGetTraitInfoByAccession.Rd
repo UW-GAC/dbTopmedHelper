@@ -14,3 +14,4 @@ dbGetTraitInfoByAccession(db, dbgap_trait_accessions)
 \description{
 Get trait info by dbGaP phv number
 }
+
